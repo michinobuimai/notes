@@ -1,22 +1,27 @@
-Afe notizen
 
 
-DAY 0 Vorlernen
+Vorlesung 0  - Vorlernen / Vorwissen
 
-# Wörter und Sprachen
+    # Wörter und Sprachen
 
-    Alphabet 
-        endliche, nichtleere Menge von Zeichen oder Symbolen
-        
-        ∑={0,1}
+        Alphabet 
+            endliche, nichtleere Menge von Zeichen oder Symbolen
+            
+            ∑={0,1}
 
+        Wort (Zeichenkette)
+            endliche folge von symbolen aus einem alphabet
 
-    Wort (Zeichenkette)
-        endliche folge von symbolen aus einem alphabet
+            "00" "001" "101010" "01101" ...
 
-        "00" "001" "101010" "01101" ...
+            leere wort epsylon 
+            |epsylon|=0
 
-        leere wort epsylon 
-        |epsylon|=0
+        Sprachen
+            beliebige Menge von Wörtern aus einem Alphabet
 
-    Sprachen
+            Ihre Bedeutung ist nicht Festgelegt!
+
+    # (Deterministischer) Endlicher Automat  DEA
+
+        Berechnungsmodell für eine Sprache

@@ -1,15 +1,7 @@
+
+
 Mathe notizen shortcuts (enden mit :)
-
-
-Arithmetik
-
-sigma ∑ sum
-
-
-Logik
-
-Aussagen - Aussageformen
-
+    sigma ∑ sum
     Vereinigung ∪ vm
     Schnitt ∩ sm
     Differenz \ (keyboard backslash)
@@ -22,30 +14,43 @@ Aussagen - Aussageformen
     Äquivalenz ⟺ <=>
     Leere menge ∅ lm
     Element von ∈ em
-    nicht Element von ∉ nem
+    nicht Element von ∉ nem    
 
-        Mengenmengen werden oft als Familie F bezeichnet
+Vorlesung 1 - Logik
 
-        Vereinigungen/Schnitt von mengen in familien von einer Grundmenge
+    # Aussagen - Aussageformen
 
-        ∪_( M ∈ F ) M := {x ∈ G | ∃M ∈ F : x ∈ M}
-        ∩_( M ∈ F ) M := {x ∈ G | ∀M ∈ F : x ∈ M}
 
-        für F = ∅
-        liefert
 
-        ∪_( M ∈ F ) M = ∅
 
-        und
 
-        ∩_( M ∈ F ) M = G
 
-        wieso?
 
-        für {x ∈ G | ∃M ∈ ∅ : x ∈ M}
-        es gibt keine Menge in das ein element der leeren Menge ist dadurch fällt die Bedingung weg das x ∈ M ist, da M nie definiert wird und liefert den wahrheitswert falsch zurrück somit initiert die vereinigung eine menge jedoch wird diese nicht befüllt .
+        # Vereinigungen/Schnitt von mengen in familien von einer Grundmenge
+            ( Mengenmengen werden oft als Familie F bezeichnet )
 
-    Relationen
+                ∪_( M ∈ F ) M := {x ∈ G | ∃M ∈ F : x ∈ M}
+                ∩_( M ∈ F ) M := {x ∈ G | ∀M ∈ F : x ∈ M}
+
+            für F = ∅    liefern:
+
+                ∪_( M ∈ F ) M = ∅ bzw. M = {}  und      ∩_( M ∈ F ) M = G
+
+            wieso?
+
+                für {x ∈ G | ∃M ∈ ∅ : x ∈ M}
+
+                Es gibt keine Menge in das ein element der leeren Menge ist.
+                Dadurch fällt die Bedingung weg das x ∈ M ist
+                Und Weil M nie definiert wird liefert es den wahrheitswert falsch zurrück.
+                
+                somit initiert die vereinigung eine menge, die jedoch nicht befüllt wird.
+
+
+Vorlesung 2 - Logik
+
+    # Relationen
+
 
 
 

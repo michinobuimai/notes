@@ -1,0 +1,20 @@
+
+robot.move();
+bewegt den roboter einen feld in blickrichtung
+dabei werden obstacles (jegliche wände) nicht beachtet
+
+
+robot.putCoin();
+plaziert erst nach einem robot.move();
+einen Coin auf dem der Roboter davor stand
+
+
+
+
+
+
+
+
+
+
+

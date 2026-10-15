@@ -1,1 +1,81 @@
-Mathe notizen
+Mathe notizen shortcuts (enden mit :)
+
+
+Arithmetik
+
+sigme ∑ sum
+
+
+Logik
+
+Aussagen - Aussageformen
+
+Vereinigung ∪ vm
+
+Schnitt ∩ sm
+
+Differenz \ (keyboard backslash)
+
+Disjunktion ∨ dsj
+
+Konjunktion ∧ knj
+
+Allquantor ∀ aq
+
+Existenzquantor ∃ eq
+
+Negation ¬ ng
+
+Implikation ⇒ =>
+
+Äquivalenz ⟺ <=>
+
+Leere menge ∅ lm
+
+Element von ∈ em
+
+nicht Element von ∉ nem
+
+Mengenmengen werden oft als Familie F bezeichnet
+
+
+Vereinigungen/Schnitt von mengen in familien von einer Grundmenge
+
+∪_( M ∈ F ) M := {x ∈ G | ∃M ∈ F : x ∈ M}
+∩_( M ∈ F ) M := {x ∈ G | ∀M ∈ F : x ∈ M}
+
+wie funktioniert das?
+
+#Vereinigung
+ergebnis_vereinigung = set()
+for M in F:          
+    for x in G:      
+        if x in M:
+            ergebnis_vereinigung.add(x)
+
+
+#Schnitt
+ergebnis_schnitt = set()
+for x in G:                  
+    ist_in_allen = True      # Annahme: x ist überall dabei
+    
+    for M in F:              # Prüfe alle Mengen M aus F
+        if x not in M:       # Wenn x in mindestens einer Menge FEHLT...
+            ist_in_allen = False
+            break            # ...dann gehört es nicht in den Durchschnitt
+            
+    if ist_in_allen:         # Wenn es den Test für alle M bestanden hat (∀M)
+        ergebnis_schnitt.add(x)
+
+
+
+
+
+
+Relationen
+
+
+
+
+
+

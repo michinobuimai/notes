@@ -5,12 +5,18 @@ DAY 0 Vorlernen
 
 # Wörter und Sprachen
 
-Alphabet 
-endliche, nichtleere Menge von Zeichen oder Symbolen
+    Alphabet 
+        endliche, nichtleere Menge von Zeichen oder Symbolen
+        
+        ∑={0,1}
 
 
+    Wort (Zeichenkette)
+        endliche folge von symbolen aus einem alphabet
 
+        "00" "001" "101010" "01101" ...
 
+        leere wort epsylon 
+        |epsylon|=0
 
-
-
+    Sprachen

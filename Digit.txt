@@ -1,14 +1,31 @@
 
 
 
-10^3 Bytes = kilobyte       kibi KiB = 1024 oder 2^10 bytes
-10^6 Bytes = megabyte       mebi MiB = 2^20 bytes
-10^9 Bytes = gigabyte       gibi GiB = 2^30 bytes
-10^12 Bytes = terabyte      tebi TiB = 2^40 bytes
+    10^3 Bytes = kilobyte       kibi KiB = 1024 oder 2^10 bytes
+    10^6 Bytes = megabyte       mebi MiB = 2^20 bytes
+    10^9 Bytes = gigabyte       gibi GiB = 2^30 bytes
+    10^12 Bytes = terabyte      tebi TiB = 2^40 bytes
 
-byte = 8 bits
-nibble = 4 bits
+    byte = 8 bits
+    nibble = 4 bits
 
 
 
+Basen
+    binary        2 states   {0,1}
+
+    octal         8 states   {0,1,2,3,4,5,6,7}
+
+    decimal       10 states  {0,1,2,3,4,5,6,7,8,9}
+
+    hexadecimal   16 states  {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
+
+
+System Verilog
+
+    Literale <length><base><value>
+
+    <length><base> optional default is 32'd
+
+    b o d h
 

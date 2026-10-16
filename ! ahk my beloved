@@ -113,6 +113,10 @@
 ::|->::{
     SendText("↦")
 }
+::seps::{
+    SendText("ε")
+}
+
 
 ;=== Lineare Algebra & Algebra ===
 ::tprod::{

@@ -21,6 +21,13 @@ Vorlesung 1 - Logik | Tag 1 - 6
     # Aussagen - Aussageformen
 
 
+        # De Morgan
+            ¬(A ∧ B) ⟺ ¬A ∨ ¬B
+            ¬(A ∨ B) ⟺ ¬A ∧ ¬B
+
+            für ∀ und ∃ gilt:
+
+            (∀x ∈ M : E(x)) ⟺ ¬(∃x ∈ M : ¬E(x))
 
 
 
@@ -40,11 +47,21 @@ Vorlesung 1 - Logik | Tag 1 - 6
 
                 für {x ∈ G | ∃M ∈ ∅ : x ∈ M}
 
-                Es gibt keine Menge in das ein element der leeren Menge ist.
-                Dadurch fällt die Bedingung weg das x ∈ M ist
-                Und Weil M nie definiert wird liefert es den wahrheitswert falsch zurrück.
-                
-                somit initiert die vereinigung eine menge, die jedoch nicht befüllt wird.
+                    Es gibt keine Menge in das ein element der leeren Menge ist.
+                    Dadurch fällt die Bedingung weg das x ∈ M ist
+                    Und Weil M nie definiert wird liefert es den wahrheitswert falsch zurrück.
+                    somit initiert die vereinigung eine menge, die jedoch nicht befüllt wird.
+
+                für {x ∈ G | ∀M ∈ ∅ : x ∈ M}
+
+                    kann man umformen zu: {x ∈ G | ¬(∃M ∈ ∅ : x ∉ M)}
+                    die Bedingung ¬(∃M ∈ ∅ : x ∉ M) liefert wahr weil
+
+                    (∃M ∈ ∅ : x ∉ M) liefert einen falschen wert weil es keine menge M in der Leeren menge
+                    geben kann und weil die negation einer Falschen Aussage eine Wahre Aussage ist,
+                    wird die Bedingung für x ∈ G immer erfüllt somit ist jedes Element in G
+                    in der Schnittmenge ∩_( M ∈ F ) M für F = ∅ vorhanden.
+
 
 
 Vorlesung 2 - Logik

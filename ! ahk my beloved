@@ -1,0 +1,152 @@
+#Requires AutoHotkey v2.0
+
+;=== Mengenlehre & Logik ===
+::lm::{
+    SendText("∅")
+}
+::em::{
+    SendText("∈")
+}
+::nem::{
+    SendText("∉")
+}
+::tm::{
+    SendText("⊆")
+}
+::om::{
+    SendText("⊇")
+}
+::vm::{
+    SendText("∪")
+}
+::sm::{
+    SendText("∩")
+}
+::knj::{
+    SendText("∧")
+}
+::dsj::{
+    SendText("∨")
+}
+::aq::{
+    SendText("∀")
+}
+::eq::{
+    SendText("∃")
+}
+::<=>::{
+    SendText("⟺")
+}
+::<=::{
+    SendText("⇐")
+}
+::=>::{
+    SendText("⇒")
+}
+::äq::{
+    SendText("⟺")
+}
+::ng::{
+    SendText("¬")
+}
+
+;=== Zahlenbereiche ===
+::nz::{
+    SendText("ℕ")
+}
+::zz::{
+    SendText("ℤ")
+}
+::qz::{
+    SendText("ℚ")
+}
+::rz::{
+    SendText("ℝ")
+}
+::cz::{
+    SendText("ℂ")
+}
+::fz::{
+    SendText("𝕂 oder 𝔽")
+}
+
+;=== Analysis & Vektoranalysis ===
+::sdlt::{
+  SendText("δ")
+}
+::dlt::{
+  SendText("Δ")
+}
+::sum::{
+    SendText("∑")
+}
+::prod::{
+    SendText("∏")
+}
+::lim::{
+    SendText("lim")
+}
+::int::{
+    SendText("∫")
+}
+::oint::{
+    SendText("∮")
+}
+::pdiff::{
+    SendText("∂")
+}
+::nabla::{
+    SendText("∇")
+}
+::inf::{
+    SendText("∞")
+}
+::<->::{
+    SendText("↔")
+}
+::->::{
+    SendText("→")
+}
+::<-::{
+    SendText("←")
+}
+::|->::{
+    SendText("↦")
+}
+
+;=== Lineare Algebra & Algebra ===
+::tprod::{
+    SendText("⊗")
+}
+::dsum::{
+    SendText("⊕")
+}
+::iso::{
+    SendText("≅")
+}
+::är::{
+    SendText("∼")
+}
+::orth::{
+    SendText("⊥")
+}
+::trnm::{
+    SendText("ᵀ")
+}
+::adjm::{
+    SendText("†")
+}
+; ==============================================================================
+; -------- Umlauts --------
+; ==============================================================================
+
+!a::Send "ä"
+!+a::Send "Ä"
+!o::Send "ö"
+!+o::Send "Ö"
+!u::Send "ü"
+!+u::Send "Ü"
+!s::Send "ß"
+
+;kusa symbol lol
+!h::Send "草"

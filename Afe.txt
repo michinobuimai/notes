@@ -1,6 +1,6 @@
 
 
-Vorlesung 0  - Vorlernen / Vorwissen
+Vorlesung 0  - Vorlernen / Vorwissen | Tag 6
 
     # Wörter und Sprachen
 
@@ -25,3 +25,31 @@ Vorlesung 0  - Vorlernen / Vorwissen
     # (Deterministischer) Endlicher Automat  DEA
 
         Berechnungsmodell für eine Sprache
+
+        Bestandteile:
+            Zustände                Q               (endlich viele)
+            Eingabealphabet         ∑
+            Übergangsfunktion       δ
+            Anfangszustand          q0  ∈   Q       (genau einen)
+            Endzustand              F   ⊆   Q       (kann mehrere haben)
+
+            kurz: Automat = ( Q , ∑ , δ , q0 , F )
+
+            Ein DEA kann also im Anfangszustand auch enden (wenn es zurrück looped)
+        
+        Übergangsdiagramm
+
+            ∑ = {a,b}
+
+            →  q0  -a→   q1   -b→   q2   -b→   q3 
+                              ←a-              F
+
+            bbbbaaaabaaabba    valid     bba              invalid 
+            abba               valid     ababa             invalid
+            ababba             valid
+
+
+    # N E A (nichtdeterministischer endlicher automat)
+
+        einfach gesagt einfach gezeigt ist es dann so das man von q0 zu q1 oder q2 gehen kann
+        und sich die wege trennen (Endzustände auch mehrere möglich)

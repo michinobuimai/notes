@@ -1,6 +1,6 @@
 
 
-Vorlesung 1
+Vorlesung 1 | Tag 6
 
     robot.move();
         bewegt den roboter einen feld in blickrichtung

@@ -16,7 +16,7 @@ Mathe notizen shortcuts (enden mit :)
     Element von ∈ em
     nicht Element von ∉ nem    
 
-Vorlesung 1 - Logik
+Vorlesung 1 - Logik | Tag 1 - 6
 
     # Aussagen - Aussageformen
 

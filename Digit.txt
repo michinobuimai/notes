@@ -1,6 +1,6 @@
 
 
-Vorlesung 1
+Vorlesung 1 | Tag 6
 
     # Byte Bit 
         10^3 Bytes = kilobyte       kibi KiB = 1024 oder 2^10 bytes

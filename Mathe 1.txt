@@ -1,24 +1,12 @@
 
 
-Mathe notizen shortcuts (enden mit :)
-    sigma ∑ sum
-    Vereinigung ∪ vm
-    Schnitt ∩ sm
-    Differenz \ (keyboard backslash)
-    Disjunktion ∨ dsj
-    Konjunktion ∧ knj
-    Allquantor ∀ aq
-    Existenzquantor ∃ eq
-    Negation ¬ ng
-    Implikation ⇒ =>
-    Äquivalenz ⟺ <=>
-    Leere menge ∅ lm
-    Element von ∈ em
-    nicht Element von ∉ nem    
 
 Vorlesung 1 - Logik | Tag 1 - 6
 
     # Aussagen - Aussageformen
+
+
+
 
 
         # De Morgan
@@ -28,9 +16,6 @@ Vorlesung 1 - Logik | Tag 1 - 6
             für ∀ und ∃ gilt:
 
             (∀x ∈ M : E(x)) ⟺ ¬(∃x ∈ M : ¬E(x))
-
-
-
 
 
         # Vereinigungen/Schnitt von mengen in familien von einer Grundmenge
@@ -61,7 +46,6 @@ Vorlesung 1 - Logik | Tag 1 - 6
                     geben kann und weil die negation einer Falschen Aussage eine Wahre Aussage ist,
                     wird die Bedingung für x ∈ G immer erfüllt somit ist jedes Element in G
                     in der Schnittmenge ∩_( M ∈ F ) M für F = ∅ vorhanden.
-
 
 
 Vorlesung 2 - Logik

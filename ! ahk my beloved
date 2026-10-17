@@ -49,21 +49,25 @@
 ::ng::{
     SendText("¬")
 }
+::or::{
+    SendText("≼")
+}
+
 
 ;=== Zahlenbereiche ===
-::nz::{
+::ntz::{
     SendText("ℕ")
 }
-::zz::{
+::gnz::{
     SendText("ℤ")
 }
-::qz::{
+::raz::{
     SendText("ℚ")
 }
-::rz::{
+::rlz::{
     SendText("ℝ")
 }
-::cz::{
+::kxz::{
     SendText("ℂ")
 }
 ::fz::{

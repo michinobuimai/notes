@@ -6,8 +6,9 @@ Vorlesung 1 - Logik | Tag 1 - 6
     # Aussagen - Aussageformen
 
 
-
-
+        # Bertrand Russell (Ex falso quodlibet)
+            ((falsch) ⇒ (richtig))  richtig
+            ((falsch) ⇒ (falsch))   richtig
 
         # De Morgan
             ¬(A ∧ B) ⟺ ¬A ∨ ¬B
@@ -48,13 +49,54 @@ Vorlesung 1 - Logik | Tag 1 - 6
                     in der Schnittmenge ∩_( M ∈ F ) M für F = ∅ vorhanden.
 
 
-Vorlesung 2 - Logik
+Vorlesung 2 - Logik - Tag 8
 
     # Relationen
+        reflexiv            ∀x ∈ X       :   xRx
+        symmetrisch         ∀x , y ∈ X   :   ( xRy ⇒ yRx )
+        antisymmetrisch     ∀x, y ∈ X    :   ( (xRy ∧ yRx ) ⇒ (x = y) )
+        transitiv           ∀x, y, z ∈ X :   ( (xRy ∧ yRz ) ⇒ xRz )
+
+        Relation auf eine Menge heißt Ordnungsrelation, wenn R reflexiv antisymmetrisch und transitiv ist.
+        ≼ := R und nennt (M,≼) eine partiell geordnete Menge.
+
+        Gilt ∀x , y ∈ M : x ≼ y ∨ y ≼ x, so ist die ≼ eine Totalordnung und (M,≼) eine Total geordnete Menge.
+        ((kleiner/größer) gleich, teilrelation | , oder Teilmengenrelation)
+
+        x ∈ M ist:
+            Maximum von (M,≼), falls y ≼ x für alle y ≼ M, gilt.
+            Minimum von (M,≼), falls x ≼ y für alle y ≼ M, gilt.
+
+            Die Relation ≤ auf ℕ, ℤ , ℚ, ℝ ist jeweils eine Totalordnung.
+
+            Für jede Menge M ist ⊆ eine Ordnungsrelation auf P( M ).
+
+            P(M) = {∅,{0},{1},{2},{0,1},{0,2},{1,2},{0,1,2}}
+
+            M = {0,1,2}
+
+            R := ⊆ 
+
+            ∀M ∈ P(M) : M ⊆ M ⇒ (P(m),≼)
+
+            Sie ist im Allgemeinen keine Totalordnung (zum Beispiel gilt weder {1} ⊆ {2} noch {2} ⊆ {1})
 
 
+        Jede partiell geordnete Menge (M, ≼) hat höchstens ein Maximum und höchstens ein Minimum.
+        seien x und y jeweils Maxima oder jeweils Minima von (M, ≼). Dann gilt sowohl x ≼ y als auch y ≼ x.
+        Aus der Antisymmetrie der Ordnungsrelation ≼ folgt damit x = y.
+        Also kann es keine zwei verschiedenen Maxima oder Minima geben.
+
+        Sofern sie existieren, bezeichnen wir das eindeutige Minimum einer partiell geordneten
+        Menge (M, ≼) mit min M und ihr eindeutiges Maximum mit max M .
+
+        Sei I := {x ∈ R | 0 < x ≤ 1}.
+        Dann hat die total geordnete Menge (I, ≤) kein Minimum und das Maximum max I = 1.
+
+        wieso?
+            0 ist nicht teil der Menge I: 0 ∉ I
+            somit ist der kleinste wert in der Menge I nie fest definiert, nicht wie 1.
+            Da 1 ∈ I ist und auch der größte wert den x annehmen kann.
 
 
-
-
-
+            

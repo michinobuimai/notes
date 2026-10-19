@@ -14,10 +14,13 @@ Vorlesung 1 - Logik | Tag 1 - 6
             ¬(A ∧ B) ⟺ ¬A ∨ ¬B
             ¬(A ∨ B) ⟺ ¬A ∧ ¬B
 
+<<<<<<< HEAD
+ 
+=======
             für ∀ und ∃ gilt:
+>>>>>>> 26e576a9f27ec20fa7f096b4cc358e071193df43
 
             (∀x ∈ M : E(x)) ⟺ ¬(∃x ∈ M : ¬E(x))
-
 
         # Vereinigungen/Schnitt von mengen in familien von einer Grundmenge
             ( Mengenmengen werden oft als Familie F bezeichnet )

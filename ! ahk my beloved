@@ -36,10 +36,10 @@
 }
 
 ::r>=::{
- SendText("≥
+ SendText("≥")
 }
 ::r<=::{
- SendText("≤
+ SendText("≤")
 }
 ::r/=::{
  SendText("≠") 
@@ -141,9 +141,6 @@
 }
 ::iso::{
     SendText("≅")
-}
-::är::{
-    SendText("∼")
 }
 
 

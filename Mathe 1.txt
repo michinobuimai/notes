@@ -3,8 +3,14 @@
 
 Vorlesung 1 - Logik | Tag 1 - 6
 
+    # Mengen
+        ℕ = {0,1,2,...} für unseren prof.
+        sonst: ℕ_0
+
+
     # Aussagen - Aussageformen
 
+        # Distributivgesetz
 
         # Bertrand Russell (Ex falso quodlibet)
             ((falsch) ⇒ (richtig))  richtig
@@ -48,13 +54,29 @@ Vorlesung 1 - Logik | Tag 1 - 6
                     in der Schnittmenge ∩_( M ∈ F ) M für F = ∅ vorhanden.
 
 
-Vorlesung 2 - Logik - Tag 8
+Vorlesung 2 + 3 - Logik - Tag 8 + 9
 
-    # Relationen
+    # Relationen R ⊆ N x M
+        Definition: Eine Relationzwischen Mengen M und N ist eine Menge R ⊆ N x M.
+                    Wir schreiben xRy für x,y ∈ R "x steht in Relation zu y"
+
+        ≤ := { (n,m) ∈ ℕ x ℕ | ∃k ∈ ℕ : m = n + k }
+
+        < := {(n, m) ∈ ℕ × ℕ | n ≤ m ∧ n = m}
+
+
+
+
         reflexiv            ∀x ∈ X       :   xRx
+
         symmetrisch         ∀x , y ∈ X   :   ( xRy ⇒ yRx )
-        antisymmetrisch     ∀x, y ∈ X    :   ( (xRy ∧ yRx ) ⇒ (x = y) )
-        transitiv           ∀x, y, z ∈ X :   ( (xRy ∧ yRz ) ⇒ xRz )
+
+        antisymmetrisch     ∀x, y ∈ X    :   ( ( xRy ∧ yRx ) ⇒ (x = y) )
+            formal: Seien n ≤ m und m ≤ n.
+                    Es gibt k, l ∈ N : m = n + k, n = m + l.
+                    Also n = n + k + l. Wegen k, l ≥ 0 gilt k = l = 0, also n = m
+
+        transitiv           ∀x, y, z ∈ X :   ( ( xRy ∧ yRz ) ⇒ xRz )
 
         Relation auf eine Menge heißt Ordnungsrelation, wenn R reflexiv antisymmetrisch und transitiv ist.
         ≼ := R und nennt (M,≼) eine partiell geordnete Menge.
@@ -81,7 +103,7 @@ Vorlesung 2 - Logik - Tag 8
             Sie ist im Allgemeinen keine Totalordnung (zum Beispiel gilt weder {1} ⊆ {2} noch {2} ⊆ {1})
 
 
-        Jede partiell geordnete Menge (M, ≼) hat höchstens ein Maximum und höchstens ein Minimum.
+        Jede partiell (jede totalgeordnete Menge ist auch partiell geordnet) geordnete Menge (M, ≼) hat höchstens ein Maximum und höchstens ein Minimum.
         seien x und y jeweils Maxima oder jeweils Minima von (M, ≼). Dann gilt sowohl x ≼ y als auch y ≼ x.
         Aus der Antisymmetrie der Ordnungsrelation ≼ folgt damit x = y.
         Also kann es keine zwei verschiedenen Maxima oder Minima geben.
@@ -97,5 +119,40 @@ Vorlesung 2 - Logik - Tag 8
             somit ist der kleinste wert in der Menge I nie fest definiert, nicht wie 1.
             Da 1 ∈ I ist und auch der größte wert den x annehmen kann.
 
+
+        Beispiele:
+
+        M_1 := { x ∈ ℕ | 1 < x < 5} ( Minimum 2, Maximum 4 ; Infimum 2, Supremum 4)
+
+        M_2 := { x, y ∈ ℕ>0 | 0 < x/y < 5.1} ( Infimum 0, Supremum 5.1)
+
+
+        # Äquivalenzrelationen
+
+            Eine Relation R auf einer Menge M heißt
+            Äquivalenzrelation, falls sie reflexiv, symmetrisch und transitiv ist.
+            Man schreibt dann oft ∼ := R.
+
+            Für eine Äquivalenzrelation ∼ auf M und a ∈ M heißt 
+            [a] := {x ∈ M | x ∼ a} die Äquivalenzklasse von a.
+
+            a ~ a, a ~ [a] 
+
+            x ∼1 y ⟺ x = y
+            x ∼2 y ⟺ x,y haben dieselbe Parität (gerade / ungerade)
+            x ∼3 y ⟺ x,y haben dasselbe Vorzeichen 
+            x ∼4 y ⟺ x ∼2 y ∧ x ∼3 y
+
+            bsp:
+                M = 
+
+        # Faktormengen
+
+        bsp:
+            M = {-3,-2,-1,0,1,2,3,4}
+            
+            M/~2 = { {-3,-1,1,3} , {-2,0,2,4} }
+
+            
 
             

@@ -34,6 +34,16 @@
 ::eq::{
     SendText("∃")
 }
+
+::r>=::{
+ SendText("≥
+}
+::r<=::{
+ SendText("≤
+}
+::r/=::{
+ SendText("≠") 
+}
 ::<=>::{
     SendText("⟺")
 }
@@ -135,6 +145,8 @@
 ::är::{
     SendText("∼")
 }
+
+
 ::orth::{
     SendText("⊥")
 }

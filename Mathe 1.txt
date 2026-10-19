@@ -124,7 +124,7 @@ Vorlesung 2 + 3 - Logik - Tag 8 + 9
 
         M_1 := { x ∈ ℕ | 1 < x < 5} ( Minimum 2, Maximum 4 ; Infimum 2, Supremum 4)
 
-        M_2 := { x, y ∈ ℕ>0 | 0 < x/y < 5.1} ( Infimum 0, Supremum 5.1)
+        M_2 := { x ∈ ℚ | 0 < x < 5} ( Infimum 0, Supremum 5)
 
 
         # Äquivalenzrelationen

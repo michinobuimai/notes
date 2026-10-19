@@ -1,6 +1,6 @@
 
 
-Vorlesung 0  - Vorlernen / Vorwissen | Tag 6
+Vorlesung 0  - Vorlernen / Vorwissen | Tag 6 + 9
 
     # Wörter und Sprachen
 
@@ -35,8 +35,26 @@ Vorlesung 0  - Vorlernen / Vorwissen | Tag 6
 
             kurz: Automat = ( Q , ∑ , δ , q0 , F )
 
+            Menge aller Wörter (beinhaltet alle möglichen kombinationen aus einem Alphabet)
+
+            ∑^* = ∪^∞_n=0 ∑^n
+
+            ∑^+ = ∑^* / {ε}
+
+
+
+
+
+
+
+
+
+
+
+
             Ein DEA kann also im Anfangszustand auch enden (wenn es zurrück looped)
         
+
         Übergangsdiagramm
 
             ∑ = {a,b}

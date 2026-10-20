@@ -33,3 +33,6 @@ Vorlesung 1 | Tag 6
                     System.out.println("i: " + i + ", j: " + j);
                 }
 
+    # if shortwriteform
+
+    # Konstanten

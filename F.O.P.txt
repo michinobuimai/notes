@@ -1,6 +1,6 @@
 
 
-Vorlesung 1 | Tag 6
+Vorlesung 1 | Tag 6 +11
 
     robot.move();
         bewegt den roboter einen feld in blickrichtung
@@ -21,7 +21,6 @@ Vorlesung 1 | Tag 6
         [name] jetzt auch mit [Referenz] zugreifen
 
     # for loops
-
         for([type][variable]=[value];  [requirement can also be a term]  ; [variable][modifier/term] ){}
 
             for schleifen werden durch ; seperariert.
@@ -29,10 +28,29 @@ Vorlesung 1 | Tag 6
 
             bsp. 
                 for (  int i = 0, j = 10  ;   i < j   ;   i++, j--   ) {
-
                     System.out.println("i: " + i + ", j: " + j);
                 }
 
     # if shortwriteform
+        bringt zwar nur was für variablen. 
+        variable = (bedingung) ? wertWennTrue : wertWennFalse;
+        bsp.
+            String status = (alter >= 18) ? "Volljährig" : "Minderjährig";
 
     # Konstanten
+        final int MAX_WERT = 100;
+        final User nutzer = new User("Max");
+
+        Verboten: nutzer = new User("Anna"); (Kein neues Objekt zuweisen)
+
+        Erlaubt:  nutzer.setAlter(25);      (Daten im Objekt ändern)
+
+    # Arrays
+        int[] M = new int[n]; // n sind die maximalen elemente die in der liste seien können
+        
+        int[] zahlen = {10, 20, 30, 40};
+        String[] namen = {"Anna", "Ben", "Chris"};
+
+        String[] staedte = new String[5];
+        staedte[0] = "Berlin"; 
+        

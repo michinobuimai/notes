@@ -41,17 +41,6 @@ Vorlesung 0  - Vorlernen / Vorwissen | Tag 6 + 9
 
             ∑^+ = ∑^* / {ε}
 
-
-
-
-
-
-
-
-
-
-
-
             Ein DEA kann also im Anfangszustand auch enden (wenn es zurrück looped)
         
 

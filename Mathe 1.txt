@@ -1,7 +1,7 @@
 
 
 
-Vorlesung 1 - Logik | Tag 1 - 6
+# Vorlesung 1 - Logik | Tag 1 - 6
 
     # Mengen
         ℕ = {0,1,2,...} für unseren prof.
@@ -52,7 +52,7 @@ Vorlesung 1 - Logik | Tag 1 - 6
                     wird die Bedingung für x ∈ G immer erfüllt somit ist jedes Element in G
                     in der Schnittmenge ∩_( M ∈ F ) M für F = ∅ vorhanden.
 
-Vorlesung 2 + 3 - Logik - Tag 8 + 9
+# Vorlesung 2 + 3 - Logik - Tag 8 + 9
 
     # Relationen R ⊆ N x M
         Definition: Eine Relationzwischen Mengen M und N ist eine Menge R ⊆ N x M.

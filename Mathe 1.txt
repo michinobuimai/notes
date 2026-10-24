@@ -7,6 +7,8 @@
         ℕ = {0,1,2,...} für unseren prof.
         sonst: ℕ_0
 
+        Potenzmengen
+
     # Aussagen - Aussageformen
 
         # Distributivgesetz

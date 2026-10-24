@@ -54,3 +54,17 @@ Vorlesung 1 | Tag 6 +11
         String[] staedte = new String[5];
         staedte[0] = "Berlin"; 
         
+        Arrays.copyOf( [oldarray], [new leghth of the copy] )
+        NICHT der maximale index angegeben! sondern die länge (von 0) selbst.
+
+        Array daten structur ist dann aber! [element,element,element]
+
+    #return
+        return [datentyp] [daten];
+        
+        oder
+        wenn die funktion ein gegebenen datenwert zurrückgibt:
+
+        public static [datentyp] methode(){
+        return [variable mit gelichen datentyp];
+        }

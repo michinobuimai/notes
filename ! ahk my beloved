@@ -1,4 +1,4 @@
-# Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
 ;=== Mengenlehre & Logik ===
 ::lm::{
@@ -118,14 +118,14 @@
 ::<->::{
     SendText("↔")
 }
+::|->::{
+    SendText("↦")
+}
 ::->::{
     SendText("→")
 }
 ::<-::{
     SendText("←")
-}
-::|->::{
-    SendText("↦")
 }
 ::seps::{
     SendText("ε")

@@ -54,7 +54,7 @@
                     wird die Bedingung für x ∈ G immer erfüllt somit ist jedes Element in G
                     in der Schnittmenge ∩_( M ∈ F ) M für F = ∅ vorhanden.
 
-# Vorlesung 2 + 3 - Logik - Tag 8 + 9
+# Vorlesung 2 + 3 + 4 - Relationen - Tag 8 + 9
 
     # Relationen R ⊆ N x M
         Definition: Eine Relationzwischen Mengen M und N ist eine Menge R ⊆ N x M.
@@ -78,7 +78,7 @@
 
         transitiv           ∀x, y, z ∈ X :   ( ( xRy ∧ yRz ) ⇒ xRz )
 
-    # Ordnungsrelation ≼
+    # Ordnungsrelation ≼ reflxi. antisym. transi.
 
         Relation auf eine Menge heißt Ordnungsrelation, wenn R reflexiv antisymmetrisch und transitiv ist.
         ≼ := R und nennt (M,≼) eine partiell geordnete Menge.
@@ -128,7 +128,7 @@
 
         M_2 := { x ∈ ℚ | 0 < x < 5} ( Infimum 0, Supremum 5)
 
-    # Äquivalenzrelationen ~
+    # Äquivalenzrelationen ~ reflxi. sym. transi.
 
         Eine Relation R auf einer Menge M heißt
         Äquivalenzrelation, falls sie reflexiv, symmetrisch und transitiv ist.
@@ -154,5 +154,64 @@
             
             M/~2 = { {-3,-1,1,3} , {-2,0,2,4} }
 
-# Vorlesung 3 Funktionen und Bilder
+    # Abbildungen 
+    Jede Abbildung ist eine relation f ⊆ X x Y.
+    JEDES x ∈ X hat genau EIN y ∈ Y mit (x,y) ∈ f. Wir bezeichnen f(x)=y.
+
+    Definitionsmenge X
+    Zielmenge Y
+    
+
+    # Identität id_M: M → M, x ↦ x auf der Menge M
+
+    # Funktionen sind abbildungen zwischen Zahlenraümen
+
+        # Verknüpfungen
+            bsp.
+            Additions,Multiplikationsfunktion
+                x,*: Z x Z → Z für Z ∈ {ℕ, ℤ, ℝ, ℚ}.
+
+        Für eine Abbildung f : X → Y ist
+            (i) das Bild von A ⊆ X unter f die Menge        f   (A) := {y ∈ Y | ∃x ∈ A : f (x) = y},
+            (ii) das Urbild von B ⊆ Y unter f die Menge     f^-1(B) := {x ∈ X | f (x) ∈ B}.
+
+        Per Definition der Abbildung f : X → Y , gilt f^−1(Y ) = X.
+        Andersherum gilt nur         f (X) ⊆ Y , aber nicht immer Gleichheit.
+
+        Für eine Abbildung                  g : X → Y, x ↦ → g(x) und A ⊆ X
+        definieren wir die Schreibweise:    {g(a) | a ∈ A} := g(A).
+        Dabei geben wir die Abbildung nicht eigens an,
+        wenn ihre Zuordnung aus der Schreibweise und die Mengen X und Y aus dem Zusammenhang klar sind
+
+
+        Eine Abbildung f : X → Y heißt
+            (i) surjektiv,                
+                    falls f (X) = Y ,                                       
+            (alle Elemente aus Y können aus X abgebildet werden [eine Zuordnung besitzen])
+                
+            (ii) injektiv,
+                    falls ∀x1, x2 ∈ X : (x1̸ = x2) ⇒ (f (x1) neq:  f (x2)),
+            (jedes Element aus Y muss aus höchstens ein Element aus X abgebildet werden.)
+
+            (iii) bijektiv,
+                    falls sie surjektiv und injektiv ist. Dann ist f eine Bijektion von X nach Y 
+
+
+        # Bijektivität (Surjektivität + Injektivität)
+            Eine Abbildung f : X → Y ist genau dann bijektiv, wenn für jedes y ∈ Y genau ein x ∈ X mit f (x) = y existiert.
+            
+
+            Beweis:
+                Sei f zunächst bijektiv.
+                Wegen der Surjektivität von f existiert per Definition zu jedem y ∈ Y mindestens ein x ∈ X mit f (x) = y.
+                Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so folgt aus der Injektivität x1 = x2.
+                Somit gibt es genau ein solches x.
+                
+                Nehmen wir umgekehrt an, dass für jedes y ∈ Y ein eindeutiges x ∈ X mit f (x) = y existiert.
+                Dann ist f (X) = Y , also f surjektiv.
+                Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so sind x1 und x2 Urbilder desselben Elements y ∈ Y .
+                Aus der Eindeutigkeit folgt x1 = x2, also ist f auch injektiv und damit bijektiv.
+
+        # Verkettung, einsetzen einer Funktion f in g
+
 

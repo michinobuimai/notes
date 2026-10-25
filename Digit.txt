@@ -36,4 +36,46 @@ Vorlesung 1 | Tag 6
 
         b o d h
 
-Eigenständiges Lernen - Tag
+# FORMALES
+
+     Polydalische Abbildungen:
+        
+        10011_2 = 2^0 + 2^1 + 2^4 = 19_10
+
+        4AF_16  = 15*16^0 + 10*16^1 + 4*16^2 = 15 + 160 + 1024 = 1190_10
+
+    Binary to hexadecimal:   01 0001 1001 = 0001 0001 1001 = (2^0) + (2^0) + (2^3+2^0) = 1 + 1 + (8+1) = 119_16
+                             11 1010 1110 = 0011 1010 1110 = 3 + 10 + 14 = 3AE_16 
+
+        4 bits = 1 nibble also nibble weise umwandeln!
+
+    Dezimal zu Binär:       
+    
+    Halbieren mit Rest (Invers Horner Schema):
+        120_10 = 2(60)+0 = 2(2(30)+0)+0 = 2(2(2(15)+0)+0)+0 = 2(2(2(2(7)+1)+0)+0)+0 = 2(2(2(2(2(3)+1)+1)+0)+0)+0 = 2(2(2(2(2(2(1)+1)+1)+1)+0)+0)+0 = 2(2(2(2(2(2(2(0)+1)+1)+1)+1)+0)+0)+0 = 1111000_2
+        needed bits 7 how do we calc this faster? 
+
+            Zustände für n bits                 = (2^n)
+            Größter Wert für n bits             = (2^n)-1
+            Wie viele Bits für N möglichkeiten  = ceil(log_2(N)) #ceil ist für hochrunden, ceiling!
+
+
+    Zweierkomplement
+
+        erstes bzw. MSD ist negativ
+
+        1001 = -2^3 + 0 + 0 + 2^0 = -7
+
+        10   = -2^1 + 0 = -2 
+
+        1    = -2^0 = -1
+
+        11111= -2^4 + ∑ N=4,k=1 (2^4-k) = -1
+
+        für n >= 2 basis:
+            
+            -12_10 = -1 * 12_10 = -1* 5(2)+2 = -1* 5(5(0)+2)+2 = -1* 22_5 = 444_5 + 1_5 - 22_5 = 423_5
+
+
+
+    Addieren von

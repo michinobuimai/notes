@@ -180,13 +180,10 @@
 
         Für eine Abbildung                  g : X → Y, x ↦ → g(x) und A ⊆ X
         definieren wir die Schreibweise:    {g(a) | a ∈ A} := g(A).
-        Dabei geben wir die Abbildung nicht eigens an,
-        wenn ihre Zuordnung aus der Schreibweise und die Mengen X und Y aus dem Zusammenhang klar sind
-
 
         Eine Abbildung f : X → Y heißt
             (i) surjektiv,                
-                    falls f (X) = Y ,                                       
+                    falls f (X) = Y ,bzw.  ∀y ∈ Y   ∃x ∈ X : f(x) = y                              
             (alle Elemente aus Y können aus X abgebildet werden [eine Zuordnung besitzen])
                 
             (ii) injektiv,
@@ -197,20 +194,66 @@
                     falls sie surjektiv und injektiv ist. Dann ist f eine Bijektion von X nach Y 
 
 
-        # Bijektivität (Surjektivität + Injektivität)
-            Eine Abbildung f : X → Y ist genau dann bijektiv, wenn für jedes y ∈ Y genau ein x ∈ X mit f (x) = y existiert.
-            
 
-            Beweis:
-                Sei f zunächst bijektiv.
-                Wegen der Surjektivität von f existiert per Definition zu jedem y ∈ Y mindestens ein x ∈ X mit f (x) = y.
-                Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so folgt aus der Injektivität x1 = x2.
-                Somit gibt es genau ein solches x.
+            # Beweisen von Surjektivität (jedes y ∈ Y ist abgebildet)
+                ∀y ∈ Y   ∃x ∈ X : f(x) = y 
+
+                Bsp. f(x) = 3x+2
+
+                3x+2 = y            | -2 :3
+                x    = 1/3 *(y-2)
+
+                einsetzen in f(x):     f(x) = 3 (1/3 *(y-2)) +2     =>     f(x) = 1 * (y-2)+2    =>     f(x) = y 
+
+            # Beweisen von Injektivität (nur ein x das auf y zeigt)
+                ∀x1, x2 ∈ X : (f (x1) = f (x2)) ⇒ (x1 = x2)
+            
+                Bsp. f(x) = 2x+1/2
+
+                    2x_1+1/2 = 2x_2+1/2 | -0.5
+                    2x_1     = 2x_2     | :2
+                    x_1      = x_2
+
+
+
+            # Bild und Urbild graphen helfen!!
+                f(x) = 2x^2
+
+                Bild von 2:     f(2)= 2*2^2 = 8
+                Urbild von 8:   8 = 2*x^2 |:2
+                                4 = x^2   | root()
+                                x_1 = 2 v x_2 = -2
+
+                ACHTUNG! f^-1([0;8]) intervalle gehen auch!!!
+                verfahren geht durch einsetzen der grenzen.
+
+                Urbilder auf nicht surjektive Abbildungen können dazu führen, dass sie eine Leere Menge sind.
+
+
+            # Bijektivität (Surjektivität + Injektivität)
+                Eine Abbildung f : X → Y ist genau dann bijektiv, wenn für jedes y ∈ Y genau ein x ∈ X mit f (x) = y existiert.
                 
-                Nehmen wir umgekehrt an, dass für jedes y ∈ Y ein eindeutiges x ∈ X mit f (x) = y existiert.
-                Dann ist f (X) = Y , also f surjektiv.
-                Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so sind x1 und x2 Urbilder desselben Elements y ∈ Y .
-                Aus der Eindeutigkeit folgt x1 = x2, also ist f auch injektiv und damit bijektiv.
+
+                Beweis:
+                    Sei f zunächst bijektiv.
+                    Wegen der Surjektivität von f existiert per Definition zu jedem y ∈ Y mindestens ein x ∈ X mit f (x) = y.
+                    Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so folgt aus der Injektivität x1 = x2.
+                    Somit gibt es genau ein solches x.
+                    
+                    Nehmen wir umgekehrt an, dass für jedes y ∈ Y ein eindeutiges x ∈ X mit f (x) = y existiert.
+                    Dann ist f (X) = Y , also f surjektiv.
+                    Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so sind x1 und x2 Urbilder desselben Elements y ∈ Y .
+                    Aus der Eindeutigkeit folgt x1 = x2, also ist f auch injektiv und damit bijektiv.
+
+
+
+
+
+
+
+
+
+
 
         # Verkettung, einsetzen einer Funktion f in g
             Die Verkettung zweier Abbildungen f : X → Y und g : Y → Z

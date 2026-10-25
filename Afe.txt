@@ -59,3 +59,4 @@ Vorlesung 0  - Vorlernen / Vorwissen | Tag 6 + 9
 
         einfach gesagt einfach gezeigt ist es dann so das man von q0 zu q1 oder q2 gehen kann
         und sich die wege trennen (Endzustände auch mehrere möglich)
+        

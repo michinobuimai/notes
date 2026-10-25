@@ -79,3 +79,17 @@ Vorlesung 1 | Tag 6
 
 
     Addieren von
+
+
+# SYSTEM VERILOG
+
+    assign ...
+        Y   =     A;   BUF  Y= A
+        Y   =    ~A;   NOT  Y=~A
+        Y   = A & B;   AND  Y=AB
+        Y   = A | B;    OR  Y=A+B
+        Y   = A ^ B;   XOR  Y=A@B
+        Y   = A ~&B;  NAND  Y= AB overline
+        Y   = A ~|B;   NOR  Y=A+B overline
+        Y   = A ~^B;  XNOR  Y=A@B overline
+        Y   = A^B^C;  XOR3  Y=A@B@C

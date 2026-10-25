@@ -190,7 +190,7 @@
             (alle Elemente aus Y können aus X abgebildet werden [eine Zuordnung besitzen])
                 
             (ii) injektiv,
-                    falls ∀x1, x2 ∈ X : (x1̸ = x2) ⇒ (f (x1) neq:  f (x2)),
+                    falls ∀x1, x2 ∈ X : (x1 =/= x2) ⇒ (f (x1) =/= f (x2)),
             (jedes Element aus Y muss aus höchstens ein Element aus X abgebildet werden.)
 
             (iii) bijektiv,
@@ -213,5 +213,10 @@
                 Aus der Eindeutigkeit folgt x1 = x2, also ist f auch injektiv und damit bijektiv.
 
         # Verkettung, einsetzen einer Funktion f in g
+            Die Verkettung zweier Abbildungen f : X → Y und g : Y → Z
+            ist die Abbildung g ◦ f : X → Z, x ↦ (g ◦ f)(x) := g(f(x)).
 
+        Die eindeutig bestimmte Abbildung f^−1 aus Satz 1.76 heißt Umkehrabbildung (bzw. Umkehrfunktion) von f.
+         Ist f eine bijektive Abbildung, dann auch f^-1 und es gilt (f^−1)^−1 = f.
 
+        Die Einschränkung von f : X → Y auf A ⊆ X ist die Abbildung f|A : A → f(A), x ↦→ f(x).

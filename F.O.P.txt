@@ -75,6 +75,40 @@ Vorlesung 1 | Tag 6 +11
         return (BEDINGUNG) ? (wert wenn wahr) : (wert wenn nicht wahr);
 
 
+    # Klassen
+        file unique
+
+        [klassename].java
+            innerhalb der Datei:
+                public class [klassename] {
+                    private [datentyp] [wert1];
+
+                    // das ist ein Konstruktor, eine Methode mit methodennamen, der identisch zum
+                    // klassennamen ist. Der Konstruktor darf keinen Rückgabe wert besitzten!!!
+                    // Es erstellt ein neues Object [klassename]:
+                    // Abrufbar in ´´´main.java´´´ mit ´´´[klassename] [name object] = new [klassenname]([datentyp] [wert])´´´
+
+                        public [klassenname]( [datentyp] [wert1]){
+                            this.[wert1] = [wert1];
+                        }
+
+                    // diese methode kann dann vom object abgerufen werden
+                    // muss kein rückgabewert haben wird genutz um das object spezifisch auf eine
+                    // ggebene weise zu modifzieren.
+
+                        public [rückgabe datentyp, void wenn keins] [methode]([datentyp] [wert2]){
+
+                            //(irgendwas wird mit [wert2] gemacht oder sogar gar nicht)
+                            // vlcht wird mit dem wert2 wert1 modifiziert. alles ist möglich.
+                            // wert1 könnte auch fest einfach modifiziert werden ohne das wert2 benötigt wird.
+                            // Oder es wird einfach ein wert sei es wert1 aus dem object zurrückgegeben.
+                            
+                        }
+                }
+
+
+
+
 FORMALES
 
 

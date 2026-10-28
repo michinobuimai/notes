@@ -245,16 +245,6 @@
                     Sind x1, x2 ∈ X mit f (x1) = f (x2) = y, so sind x1 und x2 Urbilder desselben Elements y ∈ Y .
                     Aus der Eindeutigkeit folgt x1 = x2, also ist f auch injektiv und damit bijektiv.
 
-
-
-
-
-
-
-
-
-
-
         # Verkettung, einsetzen einer Funktion f in g
             Die Verkettung zweier Abbildungen f : X → Y und g : Y → Z
             ist die Abbildung g ◦ f : X → Z, x ↦ (g ◦ f)(x) := g(f(x)).
@@ -262,4 +252,49 @@
         Die eindeutig bestimmte Abbildung f^−1 aus Satz 1.76 heißt Umkehrabbildung (bzw. Umkehrfunktion) von f.
          Ist f eine bijektive Abbildung, dann auch f^-1 und es gilt (f^−1)^−1 = f.
 
-        Die Einschränkung von f : X → Y auf A ⊆ X ist die Abbildung f|A : A → f(A), x ↦→ f(x).
+        Die Einschränkung von f : X → Y auf A ⊆ X ist die Abbildung f|A : A → f(A), x ↦ f(x).
+
+Vorlesung 5 - Zahlen
+
+    succ: ℕ → ℕ, n ↦ (n ∪ {n})
+
+    Satz 2.5. Jedes n ∈ N \ {0} ist Nachfolger einer anderen Zahl, es existiert also m ∈ N mit succ(m) = n. 
+
+    Das Tupel (N,n_0,succ) erfüllt die Peano-Axiome, wenn:
+
+        P1. n_0 ∈ N (existenz der null)
+
+        P2. succ: N → N ist eine Abbildung (Jede Zahl hat einen Nachfolger)
+
+        P3. ∀n ∈ N: succ(n) ≠ n_0
+
+        P4. succ ist injektiv.
+
+        P5. ∀M ⊆ N: (n_0 ∈ M ∧ succ(M) ⊆ M ) ⇒ M = N. 
+
+    Die Menge der natürlichen Zahlen (von Neumann) ist ℕ := {∅,{∅},{∅,{∅}},{∅,{∅},{∅,{∅}}},...}
+    Dabei ist jedes Element die Menge der vorherigen Elemente.
+
+    0 :=                 ∅,
+    1 := {0} =          {∅},
+    2 := {0,1} =        {∅, {∅}}
+    3 := {0,1,2} =      {∅, {∅}, {∅,{∅}}}
+    4 := {0,1,2,3} =    {∅, {∅}, {∅{∅}}, {∅,{∅},{∅,{∅}}}}
+    5 := {0,1,2,3,4} =  {∅, {∅}, {∅{∅}}, {∅,{∅},{∅,{∅}}}, {∅,{∅},{∅{∅}},{∅,{∅},{∅,{∅}}}} }
+
+    (ℕ, succ) erfüllt die Peano-Axiome mit succ: ℕ → ℕ, n ↦ n ∪ {n}.
+
+    Vollständige Induktion
+
+        M := {n ∈ ℕ | E(n)}
+
+        Induktionsanfang E(0) ⇒ 0 ∈ M.
+        Für n ∈ M gilt E(n):
+        Induktionsschritt: ⇒ E(succ(n)).
+        ⇒ succ(n) ∈ M.
+        Also succ(M) ⊆ M.
+        
+    Varianten des Induktionsprinzips:
+
+        ∀n ∈ ℕ : (∀m ∈ {0, ... , n} : F(m)): E(n) 
+

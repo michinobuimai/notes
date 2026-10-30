@@ -49,6 +49,9 @@ Vorlesung 1 | Tag 6
 
             4 bits = 1 nibble also nibble weise umwandeln!
 
+        Binary to octal:       1 010 011 110 = 001 010 011 110 = (2^0) + (2^1) + (2^1 + 2^0) + (2^2 + 2^1) = 1+2+2+1+4+2 = 12 
+
+
         # Dezimal zu Binär:       
             
         Halbieren mit Rest (Invers Horner Schema):
@@ -60,6 +63,9 @@ Vorlesung 1 | Tag 6
                     Wie viele Bits für N möglichkeiten  = ceil(log_2(N)) #ceil ist für hochrunden, ceiling!
 
         Zweierkomplement
+
+            WIeso nicht Vorzeichen Betrag Darstellung (1 0 msd sagt aus ob es negativ oder positiv ist)
+             hat +0 und -0 redundanz
 
                 erstes bzw. MSD ist negativ
 

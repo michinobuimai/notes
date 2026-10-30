@@ -254,7 +254,7 @@
 
         Die Einschränkung von f : X → Y auf A ⊆ X ist die Abbildung f|A : A → f(A), x ↦ f(x).
 
-Vorlesung 5 - Zahlen
+# Vorlesung 5 - Zahlen
 
     succ: ℕ → ℕ, n ↦ (n ∪ {n})
 
@@ -298,3 +298,62 @@ Vorlesung 5 - Zahlen
 
         ∀n ∈ ℕ : (∀m ∈ {0, ... , n} : F(m)): E(n) 
 
+# Vorlesung 6 - Einfache Arithmetik
+
+    Addition a + b := |{(a x {0}) ∪ (b x {1})}|
+     (a + b) = +(a,b) 
+     Kardinalität der Vereinigung zweier disjunkter Mengen.
+
+        Bsp.
+            4 + 3 = 7
+            
+            4 : {0,1,2,3} ,  3 : {0,1,2} 
+
+            |{(0,0),(1,0),(2,0),(3,0)} ∪ {(0,1),(1,1),(2,1)}|
+            |{(0,0),(1,0),(2,0),(3,0),(0,1),(1,1),(2,1)}|
+
+     Kardinalität von zwei Vereinigten Mengen
+     Für zwei disjunkte Mengen A, B gilt |A ∪ B| = |A|+|B|
+
+
+     Per Nachfolgerregel Beweis:
+        ∀a,b ∈ ℕ : succ(a)+b = succ(a+b)
+
+        succ(a)+b = |(succ(a) x {0}) ∪ (b x {1})|
+                  = |((a ∪ {a}) x {0}) ∪ (b x {1})|
+                  = |((a x {0}) ∪ ({a} x {0})) ∪ (b x {1})|
+                  = |((a x {0}) ∪ ({(a,0)})) ∪ (b x {1})|
+                  = succ()
+
+     Kommutativität gilt:     n + m = m + n
+     Assoziativität gilt: a + (b+c) = a + b + c
+
+     ∑ ^N _i = n0 a(i) := a(n0) + a(n1) + ... + a(N)
+
+    Substraktion R := {(a,b) ∈ ℕ² | a ≥ b },  - := R → ℕ, (b,a) ↦ k :  b = a+k 
+     b-a = -(b,a)
+
+     Für endliche Mengen A, B mit A ⊆ B gilt |B \ A| ⟺ |B| - |A|.
+
+     Für endliche Mengen A, B gilt |A ∪ B| = |A| + |B| - |A ∩ B|.
+
+    Multiplikation * := ℕ² → ℕ, (a,b) ↦ |a x b|
+
+     Nachfolgerregel gilt          a(b+1) = ab + a.
+     Kürzungsregel gilt     a ≠ 0:     ab = ac ⇒ b = c.
+
+     Distributivgesetz gilt wegen Nachfolgerregel:     a(b + c) = ab + ac
+
+     ∏ ^N _i=n0 a(i) := a(n0) * a(n1) * .. * a(N)
+
+    Division  b|a := (∃q ∈ ℕ : a = b*q),   D:={(a,b) ∈ ℕ² | b ≠ 0 und b|a}     , / := D → ℕ, (a,b) ↦ q
+
+    Modulo     D:={(a,b) ∈ ℕ², r ∈ ℕ | b ≠ 0 und a=b*q+r}, % := D → ℕ, (a,b) ↦ q,R
+     
+     div: N × (N \ {0}) → N, (a, b) ↦ q,
+     mod: N × (N \ {0}) → N, (a, b) ↦ r
+
+    a div b := div(a,b)    a mod b := mod(a,b)
+
+    a ist durch b teilbar b|a wenn (a mod b = 0)
+     

@@ -22,6 +22,8 @@ Vorlesung 0  - Vorlernen / Vorwissen | Tag 6 + 9
 
             Ihre Bedeutung ist nicht Festgelegt!
 
+            L ⊆ ∑*
+
     # (Deterministischer) Endlicher Automat  DEA
 
         Berechnungsmodell für eine Sprache
@@ -60,3 +62,44 @@ Vorlesung 0  - Vorlernen / Vorwissen | Tag 6 + 9
         einfach gesagt einfach gezeigt ist es dann so das man von q0 zu q1 oder q2 gehen kann
         und sich die wege trennen (Endzustände auch mehrere möglich)
         
+Vorlesung 3
+
+    Induktion 
+    Summenformel nicht verwechseln mit Alphabet (selbes symbol)
+    ∑ ^N _i=0 a(i) =  a(i0) + a(i1) + ... + a(N)  =  a( n/2(n+1) )
+
+
+    Beweise herleiten
+        Verständnis → Skizzieren der Ideen → vertraut machen mit ähnlichen Beweisen.
+
+        Beweis aufschreiben!
+
+    Konkatenation von Wörtern und Sprachen
+        Wörter: w1 o w2 = w1w2
+                ε o ε = ε
+                ε o w = w
+
+        Sprachen: L1 o L2 = alle möglichen Kombinationen aus L1 und L2
+
+# Vorgeschriebene Definitionen vom prof
+
+    Automat =(∑, Q, s, δ, {A})
+
+    man definiert Q := {q0,q1,...,qn}
+
+    s startzustand definieren s:= q0
+
+    {A} endzustand definieren {A}:= F
+
+
+    Bsp: ({0,1},{A,B,C},A,δ,{B})
+
+    {0,1} erlaubte Wörter
+
+    {A,B,C} Zustände
+
+    A startzustand
+
+    δ hier zwar nicht definiert aber ist öfters eine tabelle die die übergänge zeigt
+
+    {B} Endzustand

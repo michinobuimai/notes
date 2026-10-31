@@ -36,9 +36,7 @@ Vorlesung 1 | Tag 6
 
         b o d h
 
-# FORMALES
-
-     Polydalische Abbildungen:
+    # Polydalische Abbildungen:
         
         10011_2 = 2^0 + 2^1 + 2^4 = 19_10
 
@@ -93,6 +91,7 @@ Vorlesung 1 | Tag 6
         Erstellung fester Regeln. Erstellt Eindeutigkeit im Verhalten eines Systems.
         "Wenn __ dann gilt __ ."
         Echte Welt ist chaotisch mit Disziplin wird auf die Abstraktion eingeschränkt.
+        
     Wesentliche Techniken (3 Y's) Hierarchy, Modularity und Regularity
         Hierarchie
             Strukturierte Zerlegung (Top-Down) eines komplexen Gesamtsystems in immer kleinere, überschaubare Teilsysteme ("Teile und herrsche").

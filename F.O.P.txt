@@ -2,6 +2,9 @@
 
 Vorlesung 1 | Tag 6 +11
 
+    public protected default private
+
+
     robot.move();
         bewegt den roboter einen feld in blickrichtung
         dabei werden obstacles (jegliche wände) nicht beachtet
@@ -41,12 +44,17 @@ Vorlesung 1 | Tag 6 +11
 
                 ⇒ prints 1 2 3 4 5 all in their own line tho
 
-
     # if shortwriteform
         bringt zwar nur was für variablen. 
         variable = (bedingung) ? wertWennTrue : wertWennFalse;
         bsp.
             String status = (alter >= 18) ? "Volljährig" : "Minderjährig";
+        funktioniert sogar in returns oder parameter vorgehensweisen
+
+     wenn man keine lange reihe von ifs schreiben will dann:
+        # switch()
+            case () -> {}
+            default -> {}
 
     # Konstanten
         final int MAX_WERT = 100;

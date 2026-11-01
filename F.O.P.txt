@@ -23,6 +23,9 @@ Vorlesung 1 | Tag 6 +11
     # for loops
         for([type][variable]=[value];  [requirement can also be a term]  ; [variable][modifier/term] ){}
 
+        for (Type variable : array) {}
+
+
             for schleifen werden durch ; seperariert.
             somit sind mehrere variablen gleichzeitig modifizier bar:
 
@@ -30,6 +33,14 @@ Vorlesung 1 | Tag 6 +11
                 for (  int i = 0, j = 10  ;   i < j   ;   i++, j--   ) {
                     System.out.println("i: " + i + ", j: " + j);
                 }
+
+            for loops can für alle elemente in einer array durchlaufen:
+            bsp.
+                int[] a = {1,2,3,4,5}
+                for(int x : a){System.println(x)}
+
+                ⇒ prints 1 2 3 4 5 all in their own line tho
+
 
     # if shortwriteform
         bringt zwar nur was für variablen. 

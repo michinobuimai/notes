@@ -83,7 +83,7 @@ Vorlesung 1 | Tag 6
 
 
 # FORMALES
-
+ 1
     Abstraktion
         Vereinfachung / verstecken / ausblenden "unnötiger" Details
         Abstraktion erstellt klare Ebenen (Schichtenmodell)
@@ -101,17 +101,48 @@ Vorlesung 1 | Tag 6
         Regularität
             Statt für jede Aufgabe ein völlig neues Modul zu entwerfen, nutzt man identische Grundbausteine mehrfach. Das Entwicklungszeit spart und Fehler minimiert.
             Vereinfacht Massenproduktion oder erweitern auf andere funktionen.
-    
 
+ 2
+    Boole'sche Gleichungen
+     beschreiben Ausgänge einer kombinatorischen Schaltung als (boole'sche) Funktion der Eingänge.
+     ⇒ Spezifikation des Verhaltens
 
+     Elementare boole'sche Operatoren
+      NOT: overline A
+      AND: A B = A * B
+      XOR: A ⊕ B
+      OR:  A + B
 
+    Komplement: invertierte boole'sche Variable
+        Komplement von 100 = 011
 
+    Literale: Variable oder Ihr Komplement
+        A, overline A
 
+    Implikant: Produkt von Literalen (AND Kette von Literalen)
 
+    Mintern: (AND / UND Konjunktion) Implikant aber mit ALLEN Eingangsliteralen
+            bsp. ABC,  AB overline{C} , A overline{B} C ,  ... , overline{ABC}
 
+    Maxtern: (OR / ODER Konjunktion) Summe über ALLE Eingangsliteralen
+            bsp. A+B+C,  A+B+ overline{C} , A+ overline{B} +C ,  ... , overline{A+B+C}
 
+    Disjunktive Normalform (DNF) / Sum of Products (SOP)
+        Summe aller minterme für welche die Funktion WAHR ist.
+        Jeder Minterm wird für genau eine Eingangskombination WAHR.
+        Bsp. 
+            assign Y = A ^ B;
+            
+            ( Y = A ⊕ B ) is the same as ( Y =  overline{A}  &  B   +   A  &  overline{B}  ) = ( m_1 + m_2 )
+            (same as in its the kompacted version)
 
-
+    Konjuktive Normalform (KNF) / Products of Sum (POS)
+        Produkt aller maxterme für welche die funktion FALSCH ist.
+        Jeder Maxterm wird für genau eine Eingangskombination Falsch.
+        Bsp.
+            assign Y = A ^ B;
+            ( Y = A ⊕ B ) is the same as ( Y =  (A  +  B) & (overline{A} + overline{B} ) ) = ( m_0 + m_3 )
+            (same as in its the kompacted version)
 
 
 # SYSTEM VERILOG
@@ -121,13 +152,15 @@ Vorlesung 1 | Tag 6
         Y   =    ~A;   NOT  Y=~A
         Y   = A & B;   AND  Y=AB
         Y   = A | B;    OR  Y=A+B
-        Y   = A ^ B;   XOR  Y=A@B
+        Y   = A ^ B;   XOR  Y=A⊕B
         Y   = A ~&B;  NAND  Y= AB overline
         Y   = A ~|B;   NOR  Y=A+B overline
-        Y   = A ~^B;  XNOR  Y=A@B overline
-        Y   = A^B^C;  XOR3  Y=A@B@C
+        Y   = A ~^B;  XNOR  Y=A⊕B overline
+        Y   = A^B^C;  XOR3  Y=A⊕B⊕C
 
     Literale <length><base><value>
         <length><base> optional default is 32'd
 
         b o d h = binary octal decimal hexadecimal
+
+    

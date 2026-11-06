@@ -107,6 +107,8 @@ Vorlesung 1 | Tag 6
      beschreiben Ausgänge einer kombinatorischen Schaltung als (boole'sche) Funktion der Eingänge.
      ⇒ Spezifikation des Verhaltens
 
+     kombinatorischer Logik hängen Ausgänge nur von aktuellen Eingangswerten ab.
+
      Elementare boole'sche Operatoren
       NOT: overline A
       AND: A B = A * B

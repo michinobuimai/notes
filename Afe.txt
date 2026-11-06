@@ -103,3 +103,6 @@ Vorlesung 3
     δ hier zwar nicht definiert aber ist öfters eine tabelle die die übergänge zeigt
 
     {B} Endzustand
+
+Prioritäten
+    "*" then "o" then "|"

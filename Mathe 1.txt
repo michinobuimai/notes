@@ -353,7 +353,26 @@
      div: N × (N \ {0}) → N, (a, b) ↦ q,
      mod: N × (N \ {0}) → N, (a, b) ↦ r
 
-    a div b := div(a,b)    a mod b := mod(a,b)
+    a / b = q + r            a div b := div(a,b)    a mod b := mod(a,b)
 
     a ist durch b teilbar b|a wenn (a mod b = 0)
      
+# Vorlesung 8 - Ganze Zahlen
+
+    Darstellung:   a = [a,0] = [succ(a),succ(0)]              -a = [0,a] = [succ(0),succ(a)]
+        
+        (repräsentiert im gedanken her dann [q,w] = q-w)
+
+        Formal:    
+            ℤ := ℕ²/~
+
+            mit ~ := {}
+
+        Addition:
+
+            + := ℤ² → ℤ, ([a+,a-],[b+,b-]) ↦ [(a+ + b+, a- + b-)]
+
+                a + b = [(a,0)] + [(b,0)] = [(a+b,0)] = a + b
+
+            bsp.
+                1 + (-5) = [(1,0)] + [(0,5)] = [(1,5)] = [(0,4)]

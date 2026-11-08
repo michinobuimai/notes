@@ -149,7 +149,7 @@ Vorlesung 1 | Tag 6
 
 # SYSTEM VERILOG
 
-    assign ...
+    assign ... 
         Y   =     A;   BUF  Y= A
         Y   =    ~A;   NOT  Y=~A
         Y   = A & B;   AND  Y=AB

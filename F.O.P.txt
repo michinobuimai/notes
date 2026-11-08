@@ -141,26 +141,44 @@ Vorlesung 1 | Tag 6 +11
                         (Ziemlich nützlich wenn man mehrere objecte hat die sich auf ein basis einer methode basieren aber kleine diviationen besitzen)
 
                     wenn die parameter nicht übereinstimmen schreibt man eine NEUE methode die anders ist, mann nennt diesen prozess Überladen!!
-
-
                 }
+
             # Klassen datentypen werden bei einer gleichsetztung nicht kopiert!
-          Man erstellt jedeglich eine Referenz!
+                Man erstellt jedeglich eine Referenz!
 
-                bsp.
-                
-                Robot blue = new Robot(0,0) // erstellt einen Roboter namens blue
-                
-                blue2 = Robot blue          // erstellt nur eine REFERENZ zum Roboter blue
+                    bsp.
+                    
+                    Robot blue = new Robot(0,0) // erstellt einen Roboter namens blue
+                    
+                    blue2 = Robot blue          // erstellt nur eine REFERENZ zum Roboter blue
 
-            Wenn man eine kopie erstellen will muss man eine methode erstellen die die werte von blue auf blue2 packen würde.
+                Wenn man eine kopie erstellen will muss man eine methode erstellen die die werte von blue auf blue2 packen würde.
 
-            innerhalb der klasse Robot die copy methode: public Robot copy() {return new Robot(this.x, this.y);}
+                    bsp
 
-            Robot blue = new Robot(0, 0);
-            Robot blue2 = blue.copy();      // Erzeugt ein eigenständiges Objekt
+                        innerhalb der klasse Robot die copy methode:
+                        public Robot copy() {return new Robot(this.x, this.y);}
 
-            anders können auch nur bestimmte werte übergeben werden indem eine methode nur bestimmte werte dem neuen Roboter übergibt.
+                        Robot blue = new Robot(0, 0);
+                        Robot blue2 = blue.copy();      // Erzeugt ein eigenständiges Objekt
+
+                anders können auch nur bestimmte werte übergeben werden indem eine methode nur bestimmte werte dem neuen Roboter übergibt.
+
+            # Implementieren von Interfaces
+
+                package [folderstructure];
+
+                public Interface [Interface]{ [type][name]; }
+
+                public abstract class [class] extends [super] implements [Interface]{}
+
+                Abstrakte Klassen
+
+
+
+    # Enumeration
+
+    # Interface
 
 
 

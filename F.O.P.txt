@@ -4,7 +4,6 @@ Vorlesung 1 | Tag 6 +11
 
     public protected default private
 
-
     robot.move();
         bewegt den roboter einen feld in blickrichtung
         dabei werden obstacles (jegliche wände) nicht beachtet
@@ -22,6 +21,8 @@ Vorlesung 1 | Tag 6 +11
     Robot [Referenz] = [name];
         es wird kein neuer roboter erstellt man kann jedoch den Roboter mit
         [name] jetzt auch mit [Referenz] zugreifen
+
+# JAVA
 
     # for loops
         for([type][variable]=[value];  [requirement can also be a term]  ; [variable][modifier/term] ){}
@@ -81,6 +82,10 @@ Vorlesung 1 | Tag 6 +11
             Details as for optimization:
                 array.length is stored alongside initiallization as such calling it repeatively does NOT recalculate the length everytime.
 
+    # Varargs
+        Eine Unlimitierte version von Arrays in Länge.
+        Dafür nur 1 pro Methode.
+
     #return
         return [datentyp] [daten];
         
@@ -94,11 +99,9 @@ Vorlesung 1 | Tag 6 +11
         return (BEDINGUNG) ? (wert wenn wahr) : (wert wenn nicht wahr);
 
     # Klassen
-        file unique
-
-        [klassename].java
-            innerhalb der Datei:
-                public class [klassename] {
+                file unique     [klassename].java
+                 innerhalb der Datei:
+                 public class [klassename] {
                     private [datentyp] [wert1];
 
                     // das ist ein Konstruktor, eine Methode mit methodennamen, der identisch zum
@@ -121,8 +124,8 @@ Vorlesung 1 | Tag 6 +11
                             // wert1 könnte auch fest einfach modifiziert werden ohne das wert2 benötigt wird.
                             // Oder es wird einfach ein wert sei es wert1 aus dem object zurrückgegeben.
                             
+                            }
                         }
-                }
 
             # Super Klassen und Unter Klassen
 
@@ -165,16 +168,18 @@ Vorlesung 1 | Tag 6 +11
                 anders können auch nur bestimmte werte übergeben werden indem eine methode nur bestimmte werte dem neuen Roboter übergibt.
 
             # Implementieren von Interfaces
-
                 package [folderstructure];
-
                 public Interface [Interface]{ [type][name]; }
-
                 public abstract class [class] extends [super] implements [Interface]{}
 
-                Abstrakte Klassen
+            # Abstrakte Klassen
 
+            # Klassen/Interface Konstanten
+                norm: all capitals. Bsp: public static final BONUS_HEALTH = 1;
+                für normale Klassen:    public static final [typ][NAME] = [wert] ;
+                für interfaces genügt:  int [NAME] = [WERT];
 
+            # 
 
     # Enumeration
 
@@ -186,7 +191,9 @@ Vorlesung 1 | Tag 6 +11
 # FORMALES
 
     Wie funktioniert Java?
-    
+        JVM
+            java environment
+            →virtuelle machine    
 
 
 

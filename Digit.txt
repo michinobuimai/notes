@@ -146,6 +146,13 @@ Vorlesung 1 | Tag 6
             ( Y = A ⊕ B ) is the same as ( Y =  (A  +  B) & (overline{A} + overline{B} ) ) = ( m_0 + m_3 )
             (same as in its the kompacted version)
 
+ 3
+    MUX Multiplexer
+
+        MUXn = B^n+[log_2(n)] → B
+
+        MUX2 Y=A_{u2,2 (S_1...S_0) }
+
 
 # SYSTEM VERILOG
 
@@ -159,6 +166,10 @@ Vorlesung 1 | Tag 6
         Y   = A ~|B;   NOR  Y=A+B overline
         Y   = A ~^B;  XNOR  Y=A⊕B overline
         Y   = A^B^C;  XOR3  Y=A⊕B⊕C
+
+        Y   = S0 ? A1 : A2; MUX
+
+        Y = S0 ? (S1 ? A3 : A2) : (S1 ? A1 : A0);
 
     Literale <length><base><value>
         <length><base> optional default is 32'd

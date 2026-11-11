@@ -162,7 +162,7 @@ Vorlesung 1 | Tag 6
             0  1  1     1
             1  1  0     1
             1  1  1     1
-            
+
     DECODE Dekodierer
 
         DECODEn = B^n → B^{2n}
@@ -192,9 +192,24 @@ Vorlesung 1 | Tag 6
         Y   = A ~^B;  XNOR  Y=A⊕B overline
         Y   = A^B^C;  XOR3  Y=A⊕B⊕C
 
-        Y   = S0 ? A1 : A2; MUX
 
-        Y = S0 ? (S1 ? A3 : A2) : (S1 ? A1 : A0);
+        Multiplexer
+            assign Y    = S0 ? A1 : A2;                              MUX
+            assign Y    = S0 ? (S1 ? A3 : A2) : (S1 ? A1 : A0);      MUX4
+
+        Decoder
+            // DECODE2
+            module DECODE2 (
+                input logic A0, A1
+                output logic m0,m1,m2,m3
+            );
+
+            logic m0,m1,m2,m3;
+            assign m0 = ~A0 ~A1;
+            assign m1 =  A0 ~A1;
+            assign m2 = ~A0  A1;
+            assign m3 =  A0  A1;
+            endmodule
 
     Literale <length><base><value>
         <length><base> optional default is 32'd

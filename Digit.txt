@@ -153,6 +153,31 @@ Vorlesung 1 | Tag 6
 
         MUX2 Y=A_{u2,2 (S_1...S_0) }
 
+            A0 A1 S0    Y
+            0  0  0     0
+            0  0  1     0
+            1  0  0     1
+            1  0  1     0
+            0  1  0     0
+            0  1  1     1
+            1  1  0     1
+            1  1  1     1
+            
+    DECODE Dekodierer
+
+        DECODEn = B^n → B^{2n}
+
+            vereinfacht is es halt einfach alle minterme 
+            relativ effizient paralle schaltungen
+
+            DECODE2
+
+                A1 A0     Y1 Y2 Y3 Y4
+                0  0      1  0  0  0
+                0  1      0  1  0  0
+                1  0      0  0  1  0
+                1  1      0  0  0  1
+
 
 # SYSTEM VERILOG
 
